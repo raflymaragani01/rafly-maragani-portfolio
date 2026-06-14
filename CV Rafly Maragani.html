@@ -1,0 +1,322 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CV & Portofolio | Rafly Maragani</title>
+    <style>
+      /* CSS Styling */
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #0d0d0d;
+        color: #e0e0e0;
+        line-height: 1.6;
+      }
+
+      /* Header Gradient Biru-Hitam */
+      header {
+        background: linear-gradient(135deg, #000000 0%, #001f3f 50%, #004080 100%);
+        padding: 50px 20px;
+        text-align: center;
+        border-bottom: 4px solid #00509e;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+        color: #ffffff;
+        letter-spacing: 2px;
+      }
+
+      header p {
+        font-size: 1.1rem;
+        color: #b3d4ff;
+        margin-top: 10px;
+      }
+
+      /* Tab Menu */
+      .tab-menu {
+        display: flex;
+        justify-content: center;
+        background-color: #1a1a1a;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+        flex-wrap: wrap;
+      }
+
+      .tab-menu button {
+        background-color: inherit;
+        color: #b3d4ff;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        padding: 16px 24px;
+        transition: all 0.3s ease;
+        font-size: 15px;
+        font-weight: 600;
+        border-bottom: 3px solid transparent;
+      }
+
+      .tab-menu button:hover {
+        background-color: #00264d;
+        color: #ffffff;
+      }
+
+      .tab-menu button.active {
+        background-color: #003366;
+        color: #ffffff;
+        border-bottom: 3px solid #66b2ff;
+      }
+
+      /* Content Container */
+      .content-container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+      }
+
+      .tab-content {
+        display: none;
+        background-color: #141414;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.6);
+        border: 1px solid #2a2a2a;
+        animation: fadeIn 0.4s ease-in-out;
+      }
+
+      .tab-content.active {
+        display: block;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      h2 {
+        color: #66b2ff;
+        border-bottom: 1px solid #333;
+        padding-bottom: 10px;
+        margin-top: 0;
+      }
+
+      /* Cards untuk pengalaman/prestasi */
+      .card {
+        background-color: #1c1c1c;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 6px;
+        border-left: 4px solid #00509e;
+        transition: transform 0.2s;
+      }
+
+      .card:hover {
+        transform: translateX(5px);
+        border-left-color: #66b2ff;
+      }
+
+      .card h3 {
+        margin: 0 0 10px 0;
+        color: #ffffff;
+      }
+
+      .card p.date {
+        font-size: 0.9rem;
+        color: #888;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      a {
+        color: #66b2ff;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>RAFLY MARAGANI</h1>
+      <p>Mahasiswa S1 Pendidikan Fisika | Peneliti | Desainer Grafis</p>
+    </header>
+
+    <div class="tab-menu">
+      <button class="tablinks active" onclick="openTab(event, 'Identitas')">Identitas</button>
+      <button class="tablinks" onclick="openTab(event, 'Keahlian')">Keahlian/Skill</button>
+      <button class="tablinks" onclick="openTab(event, 'Pendidikan')">Riwayat Pendidikan</button>
+      <button class="tablinks" onclick="openTab(event, 'Pengalaman')">Pengalaman Kerja</button>
+      <button class="tablinks" onclick="openTab(event, 'Penelitian')">Penelitian</button>
+      <button class="tablinks" onclick="openTab(event, 'Prestasi')">Prestasi</button>
+    </div>
+
+    <div class="content-container">
+      <div id="Identitas" class="tab-content active">
+        <h2>Tentang Saya</h2>
+        <p>Mahasiswa S1 Pendidikan Fisika di Universitas Negeri Jakarta yang memiliki ketertarikan terhadap dunia penelitian, riset dan desain serta selalu ingin menebar kebermanfaatan kepada Masyarakat.</p>
+
+        <h2>Kontak Info</h2>
+        <ul>
+          <li><strong>Telepon:</strong> 081574774485</li>
+          <li><strong>Email:</strong> RAFLYMARAGANI01@GMAIL.COM</li>
+          <li><strong>Lokasi:</strong> JAKARTA, INDONESIA, 13540</li>
+          <li><strong>Instagram:</strong> <a href="https://www.instagram.com/maragani17" target="_blank">@maragani17</a></li>
+        </ul>
+      </div>
+
+      <div id="Keahlian" class="tab-content">
+        <h2>Keahlian</h2>
+        <div class="card">
+          <h3>Bahasa</h3>
+          <p>Bahasa Indonesia (Native), Bahasa Inggris (intermediate Level)</p>
+        </div>
+        <div class="card">
+          <h3>Perangkat Lunak (Software)</h3>
+          <p>Microsoft Office, Corel Draw, Adobe Creative Suite, Canva, Figma, SketchUp 3D, Blender 3D Model ]</p>
+        </div>
+        <div class="card">
+          <h3>Lainnya</h3>
+          <p>Manajemen Proyek, Rekrutmen, Partnership, Penelitian Kuantitaif, Penelitian RnD, Desain Grafis, Editing Video, Fotografi</p>
+        </div>
+      </div>
+
+      <div id="Pendidikan" class="tab-content">
+        <h2>Pendidikan</h2>
+        <div class="card">
+          <h3>Universitas Negeri Jakarta</h3>
+          <p class="date">Agustus 2021 - Sekarang</p>
+          <p>Program Studi: Pendidikan Fisika</p>
+          <p><strong>IPK:</strong> 3.46/4.00</p>
+        </div>
+      </div>
+
+      <div id="Penelitian" class="tab-content">
+        <h2>Penelitian</h2>
+        <div class="card">
+          <li>Study Fashion Digitalisasi Media Pembelajaran Rancang Busana Berbasis Virtual Reality Untuk Smk Tata Busana</li>
+          <li>Penerapan Metode Pembelajaran Role Playing Dengan Augmented Reality Untuk Meningkatkan Kemampuan Table Set Up Elaborate Siswa SMK Akomodasi Perhotelan</li>
+          <li>The Designer Aplikasi Rancang Busana Berbasis Virtual Reality Untuk Meningkatkan Kualitas Busana Para Wirausahawan</li>
+          <li>Sholatku Aplikasi Pembelajaran Tuntunan Sholat Berbasis Virtual Reality Guna Menciptakan Anak Usia Dini Islami Di Era 4.0</li>
+          <li>Aplikasi Desainku Sebagai Upaya Meningkatkan Kualitas Desain Mahasiswa Tata Busana Di Era 4.0</li>
+          <li>HearMySign : Aplikasi Penerjemah Bahasa Isyarat Cerdas Berbasis Open CV Sebagai Alat Bantu Komunikasi Tuli Dengan Masyarakat</li>
+          <li>Pengembangan Media Pembelajaran Interaktif Berbasis Animasi Dalam Pembelajaran Koordinat Kartesius Pada Siswa SMP</li>
+          <li>Formula Sabun Padat Dengan Penambahan Ekstrak Sereh (Cymbopogon Nardus L.) Dan Ekstrak Sabut Kelapa (Cocus Nucifera L.)</li>
+          <li>Quantum Solar Cell: Penerapan Quantum Computing Untuk Peningkatan Efisiensi Sel Surya Guna Mewujudkan Indonesia Emas 2045</li>
+        </div>
+      </div>
+
+      <div id="Pengalaman" class="tab-content">
+        <h2>Pengalaman Kerja</h2>
+
+        <div class="card">
+          <h3>Designer Graphic - Arcial Agency</h3>
+          <p class="date">April 2023 - Sekarang</p>
+          <ul>
+            <li>Mendesain semua aset visual iklan untuk 5 kampanye pemasaran utama perusahaan, berfokus pada target awareness dan konversi.</li>
+            <li>Merancang dan menyelesaikan lebih dari 50 desain logo untuk klien baru dan rebranding.</li>
+            <li>Mengelola dan memimpin eksekusi desain dari konsep awal hingga final output untuk 10+ proyek klien dengan rating kepuasan tinggi.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Chief Financial Officer (CFO) - Study Fashion</h3>
+          <p class="date">Mei 2023 - Sekarang</p>
+          <ul>
+            <li>Membangun dan mendirikan usaha study fashion, menciptakan visi misi usaha kursus busana berbasis virtual reality.</li>
+            <li>Mendapatkan dana usaha dari Kemendikbudristek melalui program kreativitas mahasiswa sebesar Rp 7.600.000,- serta berbagai kompetisi sebesar Rp 20.000.000,-</li>
+            <li>Berhasil mendapat 500+ pengguna aplikasi dengan rating 4.9 pada google playstore.</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Pengajar Kelompok Ilmiah Remaja - SMP Terpadu Putra 1 Jakarta</h3>
+          <p class="date">Mei 2022 - Mei 2023</p>
+          <ul>
+            <li>Melakukan eksperimen sains yang dapat menumbuhkan minat mengeksplorasi siswa.</li>
+            <li>Mengajarkan tata cara Menyusun karya ilmiah.</li>
+            <li>Mengajarkan public speaking untuk melatih kecakapan siswa terutama saat kompetisi.</li>
+            <li>Berhasil merekrut 30+ Anggota.</li>
+            <li>melatih 2 tim siswa untuk persiapan Olimpiade Penelitian Siswa Indonesia (OPSI)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div id="Prestasi" class="tab-content">
+        <h2>Prestasi & Penghargaan Terpilih</h2>
+
+        <div class="card">
+          <h3>Tingkat Internasional</h3>
+          <ul>
+            <li>Gold Medal Categories Technology, International Science Project Competition, Universitas Muhammadiyah Malang 2024</li>
+            <li>Gold Medal Categories Education International Virtual Competition of Creative & Innovative, MNNF Network Malaysia 2024</li>
+            <li>Gold Medal Categories Reseaerch Paper World Economic Challenge Competition, Indonesia International Institute for Life Sciences 2024</li>
+            <li>Gold Medal Indonesia International Applied Science Project Olympiad, Institut Teknologi Sepuluh Nopember Surabaya 2023</li>
+            <li>Gold Medal International Competition Of Five Minute Thesis, Universiti Malaysia Perlis 2023</li>
+            <li>Gold Medal International Science and Invention Fair, Universitas Pendidikan Ganesha 2022</li>
+            <li>Gold Medal 7th International Avicenna Youth Science Fair, International Avicenna Research Center Iran, Tehran 2022</li>
+            <li>Silver Medal Categories Education International Invention Competition For Young Moslem Scientist, Universitas Komputer Indonesia 2024</li>
+            <li>Bronze Medal Categories Food Science Indonesia International Invention Expo, Politeknik Negeri Semarang 2024</li>
+            <li>Bronze Medal, Youth International Science Fair Categories Computer Science, Universitas Dian Nuswantoro 2022</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Tingkat Nasional</h3>
+          <ul>
+            <li>Juara Harapan 1 Bisnis Digital Tahapan Bertumbuh,Kewirausahaan Mahasiswa Indonesia (KMI) Award XVI, Kemendikti 2025</li>
+            <li>Medali Emas Divisi II Inovasi Pembelajaran Digital Pendidikan, Lomba Inovasi Digital Mahasiswa, Kemendikbudristek 2024</li>
+            <li>Juara 2 Subtema Media Pembelajaran Lomba Karya Tulis Ilmiah Nasional Inovasi Pendidikan Indonesia #7, UNJ 2024</li>
+            <li>Lolos Di Danai Program Kreativitas Mahasiswa Skema Karya Inovatif, Kemendikbudristek 2022</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <h3>Hak Kekayaan Intelektual (HKI)</h3>
+          <ul>
+            <li>Study Fashion (2024) - Karya Rekaman Video</li>
+            <li>Pengembangan Media Pembelajaran Interaktif... (2024) - Karya Tulis Ilmiah]</li>
+            <li>The Designer (2022) - Program Komputer</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function openTab(evt, tabName) {
+        let i, tabcontent, tablinks;
+
+        // Sembunyikan semua konten tab
+        tabcontent = document.getElementsByClassName("tab-content");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].classList.remove("active");
+        }
+
+        // Hapus status aktif dari semua tombol
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].classList.remove("active");
+        }
+
+        // Tampilkan tab saat ini dan tambahkan class "active" ke tombol yang diklik
+        document.getElementById(tabName).classList.add("active");
+        evt.currentTarget.classList.add("active");
+      }
+    </script>
+  </body>
+</html>
